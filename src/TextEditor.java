@@ -58,8 +58,8 @@ public class TextEditor implements ActionListener {
         panel.setBorder(new EmptyBorder(5,5,5,5));
         panel.setLayout(new BorderLayout(0,0));
         panel.add(textArea,BorderLayout.CENTER);
-//        JScrollPane scroll=new JScrollPane(textArea,30,20);
-//        panel.add(scroll);
+       JScrollPane scroll=new JScrollPane(textArea,JScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED,JScrollPane.HORIZONTAL_SCROLLBAR_AS_NEEDED);
+       panel.add(scroll);
 
         //creating the frame
         frame=new JFrame();
